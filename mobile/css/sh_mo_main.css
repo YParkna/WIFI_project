@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* =========================== MAIN */
+#sh_mo_section{position:relative;font-size:14px;color:#777;word-break:keep-all;letter-spacing:-.3px;line-height:1.8;font-family:'Noto Sans KR'}
+
+/* =========================== 인사말 */
+#matc01{padding:25px 15px}
+#matc01 p{margin-bottom:8px;font-size:24px;font-weight:700;color:#222;letter-spacing:0;font-family:'Poppins'}
+#matc01 span{display:block;margin-top:12px;font-size:13px;font-weight:400;color:#222;font-family:'Noto Sans KR'}
+
+/* =========================== 메뉴버튼 */
+#matc02{padding:15px;background-color:#f2f3f5}
+#matc02 ul{padding:2px 0 0 2px}
+#matc02 ul:after{display:block;content:"";visibility:hidden;clear:both}
+#matc02 ul li{float:left;position:relative;width:50%;height:52px;margin:-1px 0 0 -1px;border:1px solid #d1d1d1;font-size:15px;font-weight:400;line-height:51px;background-color:#fff;font-family:'Noto Sans KR'}
+#matc02 ul li:before{display:block;content:"";position:absolute;left:12px;top:50%;width:4px;height:4px;margin-top:-2px;background-color:#222}
+#matc02 ul li a{display:block;padding-left:25px;color:#222}
+#matc02 ul li.mn_empty{width:100%;text-align:center}
+#matc02 ul li.mn_empty:before{display:none}
+@media (max-width:320px){
+#matc02 ul li{font-size:14px}
+#matc02 ul li:before{left:10px;width:2px;height:2px;margin-top:-1px}
+#matc02 ul li a{padding-left:18px}
+}
+
+/* =========================== 최신글 */
+#matc03{padding:25px 15px 0}
+#matc03 .tit{position:relative;margin-bottom:5px;padding-bottom:5px;border-bottom:1px solid #d1d1d1;font-size:24px;font-weight:700;color:#222;letter-spacing:0;font-family:'Poppins'}
+#matc03 .tit a{float:right;padding:15px 0 0 0;font-size:12px;color:#222}
+#matc03 .tit:after{position:absolute;content:"";position:absolute;right:0;bottom:-1px;width:65px;height:1px;background-color:#555}
+#matc03 ul li{padding:20px 0;line-height:1}
+#matc03 ul li+li{border-top:1px dotted #ccc}
+#matc03 ul li p{overflow:hidden;margin-bottom:10px;font-size:15px;text-overflow:ellipsis;white-space:nowrap;color:#222}
+#matc03 ul li p:before{display:inline-block;vertical-align:4px;content:"";width:3px;height:3px;margin-right:5px;background-color:#222}
+#matc03 ul li span{padding-left:10px;font-size:13px;letter-spacing:0;color:#777}
+#matc03 ul li em{display:inline-block;vertical-align:2px;width:14px;height:14px;margin-left:5px;border-radius:2px;font-size:10px;font-weight:600;color:#fff;text-align:center;line-height:14px;font-style:normal;background-color:#888;font-family:'Poppins'}
+
+/* =========================== 버튼영역 */
+#matc04{padding:15px}
+#matc04 .btns{overflow:hidden}
+#matc04 a{float:left;display:block;width:100%;height:55px;font-size:17px;font-weight:500;line-height:55px;color:#fff;text-align:center;background-color:#6e62c3;font-family:'Noto Sans KR'}
+#matc04 a.tel{font-size:18px;font-weight:700;letter-spacing:0;font-family:'Poppins'}
+#matc04 a i{padding-right:5px;font-size:18px}
+
+
+
+

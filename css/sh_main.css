@@ -1,0 +1,88 @@
+
+/* =========================== MAIN */
+#sh_main_banner .sh_main_img{position:relative;width:100%}
+#sh_main_banner .sh_main_img li{height:848px;background:center no-repeat; background-size:cover}
+#sh_main_banner .sh_main_img .box1{background-image:url(../img/main/main_banner_01.jpg)}
+#sh_main_banner .sh_main_img .box2{background-image:url(../img/main/main_banner_02.jpg)}
+#sh_main_banner .sh_main_img .box3{background-image:url(../img/main/main_banner_03.jpg)}
+#sh_main_banner .sh_txt_box{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;padding-top:330px;text-align:center}
+#sh_main_banner .sh_txt_box .move_txt01{margin-top:-25px;font-size:80px;color:#fff;font-weight:100;letter-spacing:-0.2px;opacity:0;font-family:'Poppins'}
+#sh_main_banner .sh_txt_box .move_txt01 b{font-weight:700}
+#sh_main_banner .sh_txt_box .move_txt02{white-space:pre-line;margin:30px 0 42px;font-size:15px;line-height:23px;color:rgba(255,255,255,.6);font-weight:300;letter-spacing:-0.1px;opacity:0;font-family:'Poppins'}
+#sh_main_banner .swiper-pager{opacity:0}
+#sh_main_banner .swiper-pager span{opacity:1;width:11px;height:11px;border:1px solid rgba(255,255,255,.7);background:none}
+#sh_main_banner .swiper-pager span+span{margin-left:10px}
+#sh_main_banner .swiper-pager span.on{background-color:rgba(255,255,255,.7)}
+#sh_main_banner .scroll{display:inline-block;position:relative;top:188px;width:83px;height:78px;margin-top:-20px;padding-top:64px;color:#fff;background:url(../img/main/scroll.png)no-repeat center center;opacity:0;font-size:13px;font-weight:300;font-family:'Poppins'}
+
+/* =========================== atc01 */
+#atc01{position:relative;height:528px;margin:135px auto 0;letter-spacing:-.3px}
+#atc01:after{display:block;content:"";clear:both}
+#atc01 .inner1{position:absolute;left:0;width:951px;height:528px;background:url(../img/main/inc01/inc01_img1.jpg)}
+#atc01 .inner2{position:absolute;top:99px;right:0;width:1070px;height:430px;padding:77px 0 0 72px;border-top-left-radius:50px;background:#f7f7f7}
+#atc01 .inner2 .tit{padding-bottom:42px;color:#222;font-size:48px;line-height:58px;font-weight:200;font-family:'Poppins'}
+#atc01 .inner2 .tit b{font-weight:700}
+#atc01 .inner2 .txt{font-size:14px;line-height:24px;color:#777}
+#atc01 .inner2 .more{width:86px;padding-top:37px;margin-left:-10px}
+#atc01 .inner2 .more a{display:block;text-align:center;font-size:12px;font-weight:600;color:#222;font-family:'Poppins'}
+#atc01 .inner2 .more:after{display:block;content:"";width:86px;height:4px;margin:8px auto 0;background:#ddd;transition:all .4s}
+#atc01 .inner2 .more:hover:after{background:rgba(118,76,162,.7)}
+#atc01 .inner2 .btn{display:block;position:absolute;top:-40px;left:650px;width:157px;height:157px;text-align:center;line-height:157px;font-weight:700;background:rgb(118,76,162);background:linear-gradient(360deg,rgba(118,76,162,1) 40%,rgba(102,126,234,1) 100%);color:#fff;background-size:200% 200%;transition:all .4s}
+#atc01 .inner2 .btn:hover{background-position:0% 100%}
+
+/* =========================== atc02 */
+#atc02{position:relative;width:1200px;height:320px;margin:0 auto;text-align:center}
+#atc02 ul{overflow:hidden}
+#atc02 ul li{float:left;width:calc(100% / 4)}
+#atc02 ul li a{display:block;height:100%;font-size:14px;line-height:22px;color:#777}
+#atc02 ul li:hover a span{background:linear-gradient(360deg,rgba(118,76,162,1) 40%,rgba(102,126,234,1) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+#atc02 ul li a span{padding-bottom:10px;line-height:45px;transition:all 0.3s;font-size:16px;letter-spacing:0;font-weight:700;color:#222;font-family:'Poppins'}
+#atc02 ul li a .img{height:150px;-webkit-transition:all 0.3s;transition:all 0.3s;background:no-repeat center 85px}
+#atc02 ul li:nth-child(1) a .img{background-image:url(../img/main/inc02/icon01.png)}
+#atc02 ul li:nth-child(2) a .img{background-image:url(../img/main/inc02/icon02.png)}
+#atc02 ul li:nth-child(3) a .img{background-image:url(../img/main/inc02/icon03.png)}
+#atc02 ul li:nth-child(4) a .img{background-image:url(../img/main/inc02/icon04.png)}
+#atc02 ul li:nth-child(1):hover a .img{background-image:url(../img/main/inc02/icon01_on.png)}
+#atc02 ul li:nth-child(2):hover a .img{background-image:url(../img/main/inc02/icon02_on.png)}
+#atc02 ul li:nth-child(3):hover a .img{background-image:url(../img/main/inc02/icon03_on.png)}
+#atc02 ul li:nth-child(4):hover a .img{background-image:url(../img/main/inc02/icon04_on.png)}
+
+/* =========================== atc03 */
+#atc03{position:relative;z-index:2;width:1200px;height:420px;margin:0 auto;box-shadow:6px 11px 31px -9px rgba(0,0,0,.3), -39px 109px 124px -141px rgba(0,0,0,.3);background:#fff}
+#atc03 .tit{display:block;position:relative;padding-bottom:18px;font-size:23px;font-weight:700;color:#222;font-family:'Poppins'}
+#atc03 .tit span{display:block;float:right;width:35px;height:35px;border:1px solid #888;background:url(../img/main/inc03/plus.png)center center no-repeat;background-size:15px}
+#atc03 .tit:before{display:block;content:'';position:absolute;top:8px;left:101px;width:2px;height:12px;background:#ccc}
+#atc03 .tit:after{display:inline-block;content:'공지사항';padding-left:30px;font-size:15px;font-weight:500;color:#777;font-family:'Noto Sans KR'}
+#atc03>div{float:left;width:50%;height:100%;padding:56px 52px 21px 45px}
+#atc03>div ul li{height:137px;padding:17px 26px 0 0px}
+#atc03>div ul li:nth-child(2){padding-top:36px}
+#atc03>div ul li a{display:block;overflow:hidden}
+#atc03>div ul .sh_date{float:left;width:76px;height:76px;padding-top:16px;border:1px solid #ddd;text-align:center;background:#2c2d2d;color:#fff}
+#atc03>div ul .sh_date .day{font-size:17px;font-weight:700}
+#atc03>div ul .sh_date .day_02{font-size:13px;line-height:24px;opacity:0.77}
+#atc03>div ul .txt_wrap{float:left;width:357px;padding:5px 0 0 43px}
+#atc03>div ul .sh_notice{display:inline-block;margin-bottom:7px;font-size:14px;color:#666;font-weight:500}
+#atc03>div ul .sh_contents{line-height:24px;font-size:14px;color:#666;opacity:0.8}
+#atc03 .index01 ul li:nth-child(1){border-bottom:1px solid #ddd}
+#atc03 .index01 ul .sh_notice{display:inline-block;margin-bottom:7px;font-size:14px;color:#666;font-weight:500}
+#atc03 .index01 ul .sh_contents{line-height:24px;font-size:14px;color:#666;opacity:0.8}
+#atc03 .index02{background:#2c2d2d}
+#atc03 .index02 .tit{color:#fff}
+#atc03 .index02 .tit span{border:1px solid #ddd;background:url(../img/main/inc03/plus_w.png)center center no-repeat}
+#atc03 .index02 .tit:before{left:83px}
+#atc03 .index02 .tit:after{content:'사내소식';color:#b7b7b7}
+#atc03 .index02 ul li:nth-child(1){border-bottom:1px solid rgba(255,255,255,.1)}
+#atc03 .index02 ul .sh_date{border:4px solid rgba(242,242,242,.3)}
+#atc03 .index02 ul .sh_date .day_02{color:#dbdbdb;opacity:0.77}
+#atc03 .index02 ul .sh_notice{color:#fff}
+#atc03 .index02 ul .sh_contents{color:#fff;opacity:0.5}
+
+/* =========================== atc04 */
+#atc04{position:relative;z-index:1;width:100%;height:392px;margin:-93px auto 0;text-align:center;background:url(../img/main/inc04/inc04_bg.jpg)}
+#atc04 .tit{padding-top:175px;font-size:48px;line-height:45px;font-weight:200;font-family:'Poppins';color:#fff}
+#atc04 .txt{padding-top:23px;font-size:14px;color:rgba(255,255,255,.7)}
+#atc04 .more{width:86px;margin:0 auto;padding-top:33px}
+#atc04 .more a{display:block;font-size:12px;font-weight:600;color:#fff;font-family:'Poppins'}
+#atc04 .more:after{display:block;content:"";width:84px;height:4px;margin:8px auto 0;background:rgba(255,255,255,.3);-webkit-transition:all .4s;transition:all .4s}
+#atc04 .more:hover:after{background:rgba(255,255,255,.8)}
+

@@ -1,0 +1,79 @@
+@charset "utf-8";
+@import url("../../css/font-awesome/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+/* ========================== 초기화 [s] */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
+body{line-height:1;font-family:'Noto Sans KR'}
+ol, ul, dl, dt, dd{list-style:none}
+blockquote, q{quotes:none}
+blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+input, button{margin:0;padding:0;font-family:'Noto Sans KR'}
+input[type="submit"]{cursor:pointer}
+button{cursor:pointer}
+textarea, select{font-family:'Noto Sans KR'}
+select{margin:0}
+a{color:#777;text-decoration:none}
+label, input, button, select, img{vertical-align:middle}
+body{font-size:0.81em}
+*, :after, :before{box-sizing:border-box}
+*{-webkit-text-size-adjust:none}
+.sound_only{display:inline-block !important;position:absolute;top:0;left:0;margin:0 !important;padding:0 !important;font-size:0;line-height:0;border:0 !important;overflow:hidden !important}
+/* ========================== 초기화 [e] */
+
+#sh_mo_wrapper{position:relative;max-width:768px;margin:0 auto}
+
+/* ========================== HEADER */
+#sh_mo_hd{position:relative;z-index:20;font-size:15px;color:#777;letter-spacing:-.2px;line-height:1.8;font-family:'Noto Sans KR'}
+#sh_mo_hd_wrapper{position:relative;padding:20px 15px}
+#sh_mo_hd_wrapper:after{display:block;content:"";position:absolute;right:0;bottom:0;z-index:1;width:40px;height:40px;background:rgb(255,255,255);background:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%)}
+/* 로고 */
+#sh_mo_logo{position:relative}
+#sh_mo_logo a{display:inline-block}
+#sh_mo_logo img{max-height:60px}
+/* 상단 버튼 및 오픈메뉴 */
+#sh_navBtn{position:absolute;top:18px;right:15px;z-index:5;width:30px;height:30px}
+#sh_navBtn span{display:block;position:relative;top:50%;transform:translateY(-50%);width:100%;height:2px}
+#sh_navBtn span:before, #sh_navBtn span:after{display:block;content:"";position:absolute;top:-6px;width:30px;height:2px;background-color:#222;-webkit-transition:all .1s;transition:all .1s}
+#sh_navBtn span:after{top:6px;width:16px;right:0;background-color:#6e62c3}
+#sh_navBtn.on{position:fixed}
+#sh_navBtn.on span:before{top:0;right:-4px;transform:rotate(45deg)}
+#sh_navBtn.on span:after{top:0;right:-4px;width:30px;transform:rotate(-45deg);background-color:#222}
+#sh_navWrap{display:none;position:fixed;left:50%;top:0;z-index:4;-webkit-transform:translateX(-50%);transform:translateX(-50%);max-width:768px;width:100%;height:100%;background-color:rgba(0,0,0,.7)}
+#sh_navWrap .inner{overflow-y:scroll;opacity:0;position:fixed;right:-40px;top:0;z-index:6;min-width:300px;width:75%;height:100%;padding:60px 0;background-color:#fff;-webkit-transition:all .1s;transition:all .1s}
+#sh_navWrap.on .inner{opacity:1;right:0;-webkit-transition:all .4s;transition:all .4s}
+#sh_navWrap .inner:before, #sh_navWrap .inner:after{opacity:0;display:block;position:fixed;top:0;right:-40px;z-index:1;content:"";min-width:300px;width:70%;height:60px;background-color:#fff;-webkit-transition:all .1s;transition:all .1s}
+#sh_navWrap .inner:after{top:auto;bottom:0}
+#sh_navWrap.on .inner:before, #sh_navWrap.on .inner:after{opacity:1;right:0;-webkit-transition:all .4s;transition:all .4s}
+#sh_navWrap .inner .copy{position:fixed;right:0;bottom:15px;z-index:2;min-width:300px;width:70%;font-size:12px;text-align:center;color:#888}
+/* 대분류 */
+#sh_mo_hd .lnb .bmenu{display:block;position:relative;width:100%;height:52px;padding:0 20px;border:none;border-bottom:1px solid #ddd;background:none;font-size:16px;font-weight:400;line-height:52px;color:#222;text-align:left;font-family:'Noto Sans KR'}
+#sh_mo_hd .lnb .bmenu:after{float:right;content:"\f107";font-family:'fontawesome'}
+#sh_mo_hd .lnb .bmenu.on:after{content:"\f106"}
+#sh_mo_hd .lnb .mn_empty{line-height:100px;text-align:center}
+/* 소분류 */
+#sh_mo_hd .smenu{display:none;padding:15px 20px;border-bottom:1px solid #ddd;background-color:#f2f3f5}
+#sh_mo_hd .smenu li a{font-size:14px;color:#777}
+/* 스크롤 메뉴 */
+#sh_roll_mn{position:relative;width:100%;padding-left:15px;overflow-x:scroll}
+#sh_roll_mn ul{display:table;width:100%;padding-right:50px}
+#sh_roll_mn ul li{display:table-cell;position:relative;padding-right:10px;white-space:nowrap}
+#sh_roll_mn ul li+li{padding:0 10px}
+#sh_roll_mn ul li a{display:block;position:relative;padding-bottom:10px;font-size:15px;font-weight:400;color:#222;font-family:'Noto Sans KR'}
+#sh_roll_mn ul li.on:after{display:block;content:"";position:absolute;left:0;bottom:0;z-index:3;width:calc(100% - 10px);height:4px;background-color:#222}
+#sh_roll_mn ul li+li.on:after{left:10px;width:calc(100% - 20px)}
+
+/* =========================== CONTAINER */
+#sh_mo_container{position:relative}
+
+/* ========================== FOOTER */
+#sh_fix_tel{opacity:0;display:block;position:fixed;right:15px;bottom:20px;width:65px;height:65px;margin-right:-10px;border-radius:50%;font-size:30px;text-align:center;line-height:65px;color:#fff;background-color:#6e62c3;box-shadow:5px 5px 5px rgba(0,0,0,.2);-webkit-transition:all .2s;transition:all .2s}
+#sh_fix_tel.active{opacity:1;margin-right:0}
+#sh_mo_ft{margin-top:20px;font-size:13px;color:#666;word-break:keep-all;letter-spacing:-.3px;line-height:1.8;text-align:center;background-color:#222;font-family:'Noto Sans KR'}
+#sh_mo_ft .inner{padding:30px 15px}
+#sh_mo_ft .copy{padding:15px 0;background-color:#111} 
+
+

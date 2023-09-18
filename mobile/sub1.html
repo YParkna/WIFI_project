@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="naver-site-verification" content=""/><!-- 네이버 소유확인 -->
+    <meta name="description" content=""><!-- 사이트 설명문구 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="회사소개-회사소개">
+    <meta property="og:description" content=""><!-- 사이트 설명문구 -->
+    <meta property="og:image" content="../img/common/logo.png">
+    <meta property="og:url" content="">
+	<title>회사소개-회사소개</title>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="css/sh_mo_common.css">
+    <link rel="stylesheet" href="css/sh_mo_sub.css">        
+</head>
+<body>
+
+<!-- sh_mo_wrapper [s] -->
+<div id="sh_mo_wrapper">
+
+    <!-- sh_mo_hd [s] -->
+    <div id="sh_mo_hd">	
+        <div id="sh_mo_hd_wrapper">
+            <div id="sh_mo_logo">
+                <a href="index.html"><img src="../img/common/logo.png" alt="Sample"></a>
+            </div>
+            <!-- 메뉴 버튼 -->
+            <div id="sh_navBtn"><span></span></div>
+            <!-- 오픈 메뉴 -->
+            <div id="sh_navWrap">
+                <div class="inner">
+                    <ul class="lnb">
+                        <li>
+                            <button class="bmenu" type="button">회사소개</button>
+                            <ul class="smenu">
+                                <li><a href="sub1.html">회사소개</a></li>
+                                <li><a href="">소분류</a></li>
+                                <li><a href="">소분류</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="bmenu" type="button">사업안내</button>
+                            <ul class="smenu">
+                                <li><a href="">소분류</a></li>
+                                <li><a href="">소분류</a></li>
+                                <li><a href="">소분류</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="bmenu" type="button">서비스분야</button>
+                            <ul class="smenu">
+                                <li><a href="">소분류</a></li>
+                                <li><a href="">소분류</a></li>
+                                <li><a href="">소분류</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="bmenu" type="button">마케팅최적화</button>
+                            <ul class="smenu">
+                                <li><a href="">소분류</a></li>
+                                <li><a href="">소분류</a></li>
+                                <li><a href="">소분류</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="bmenu" type="button">고객센터</button>
+                            <ul class="smenu">
+                                <li><a href="">소분류</a></li>
+                                <li><a href="">소분류</a></li>
+                                <li><a href="">소분류</a></li>
+                            </ul>
+                        </li>
+                    </ul>   
+                    <p class="copy">ⓒ Sample</p>         
+                </div>
+            </div>
+        </div>
+        <!-- 스크롤 메뉴 -->
+        <div id="sh_roll_mn">
+            <ul>
+                <li class="home"><a href="">홈</a></li>
+                <li class="on"><a href="sub1.html">회사소개</a></li>  
+                <li><a href="">사업안내</a></li>  
+                <li><a href="">서비스분야</a></li>  
+                <li><a href="">마케팅최적화</a></li>
+                <li><a href="">고객센터</a></li>    
+             </ul>
+        </div>
+        <script>
+        m = 0;  
+        function navClose() { 
+            $("#sh_navBtn").removeClass("on");
+            $("#sh_navWrap").fadeOut(300).removeClass("on");	
+        }
+        $(document).ready(function(){
+            $("#sh_navBtn").click(function(){
+                m++;
+                if(m%2 == 1){
+                    $("#sh_navBtn").addClass("on");
+                    $("#sh_navWrap").fadeIn(300).addClass("on");	
+                }else{
+                    navClose(); 
+                }; 
+            });	
+            $("#sh_mo_hd .bmenu").click(function(){
+                $('.smenu').not($(this).next()).slideUp(200);
+                $('.bmenu').removeClass('on');
+                $(this).addClass('on')
+                $(this).next().slideDown(200);
+            });	
+            var roll_on = $("#sh_roll_mn ul li.on");
+            $("#sh_roll_mn ul .home").after(roll_on);
+        });
+        </script>
+    </div>
+    <!-- sh_mo_hd [e] -->
+             
+    <!-- sh_mo_container [s] =-->
+    <div id="sh_mo_container">
+        <p id="mo_cont_tit">회사소개</p>
+       
+        <div id="mo_content">
+
+            <!-- 서브페이지 [s] -->
+            <div id="greeting" class="pagecommon">
+                <div class="tit_area">
+                    빠르게 발전하고있는 Smart IT 세상<br />
+                    <p><b>IT상장기업 샤이닝</b>이 여러분과 함께 만들어 갑니다.</p>
+                </div>
+                <div class="img"></div>
+                <div class="cont">
+                    <p class="st">먼저 고객 여러분의 변함없는 관심과 사랑에 깊이 감사드립니다.</p>
+                    저희 샤이닝은수익창출만을 위한 경영이념보다는 함께 공유하고 함께 커갈수 있는
+                    친구같은 파트너로서 사람을 위한 기술로 보다 윤택하고 신선하게 변화시키기 위해 모든 역량을 집중하고 있습니다.<br /><br />
+                    나태하지 않고, 현실에 안주하지 않는 자세로 끊임 없는 도전과 혁신으로 현 분야의 최고의 기업이 되기위해
+                    함께 생각하고 함께 이뤄내는 샤이닝이 되고자 합니다.<br /><br />
+                    언제나 지켜봐주시는 분들에게 실망되지 않는 기업이 되겠습니다.<br /><br />
+                    감사합니다.
+                    <p class="sign">샤이닝 <span>임직원 일동</span></p>
+                </div>
+            </div>
+            <!-- 서브페이지 [e] -->    
+
+        </div>
+    </div>
+    <!-- sh_mo_container [e] -->
+    <a id="sh_fix_tel" href="tel:15446062"><i class="fa fa-phone"></i></a></div>
+	<script>
+    $(window).on("scroll",function(){
+        if($(window).scrollTop() > 50) { 
+            $('#sh_fix_tel').addClass('active');}
+        else{
+            $('#sh_fix_tel').removeClass('active');}
+        return false;
+    });
+    </script>   
+    
+    <!-- sh_mo_ft [s] -->
+    <div id="sh_mo_ft">
+        <div class="inner">
+            경기도 부천시 부흥로 258 일산빌딩 5층 샤이닝
+            사업자 번호 : 130-37-46318(등록2007년) 통신판매업종신고 : 제2010-경기부천-924호 상호 : 샤이닝 대표 : 오성민
+            고객센터:1544-0634 팩스:0505-200-6060 이메일:hdweb@hdweb.co.kr
+        </div>
+        <p class="copy">ⓒ Sample</p>
+    </div>
+    <!-- sh_mo_ft [e] -->
+    
+</div>
+<!-- sh_mo_wrapper [e] -->
+
+</body>
+</html>
+
