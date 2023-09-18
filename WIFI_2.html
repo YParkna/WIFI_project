@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="naver-site-verification" content=""/><
+    <meta name="description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sample">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="img/common/logo.png">
+    <meta property="og:url" content="">
+	<title>메인화면</title>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/topmenu_script.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/sh_common.css">
+    <link rel="stylesheet" href="css/sh_main.css">
+    <style>
+        #left_image {
+            position: absolute;
+            top: 45%;
+            left: 300px;
+            transform: translateY(-50%);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="sh_wrapper">
+    <div id="sh_hd">
+        <div class="top_nav_bg"></div>
+    	<div id="sh_hd_wrapper">
+            <div id="sh_nav_wrap">
+                <ul id="sh_nav">
+                    <li class="menu-item active">
+                        <a href="sub1.html">LOGO</a>
+                        <ul class="sh_nav_s">
+                            <li><a href="selectBoardList.do?userId=${loggedInUser.getId()">자유게시판</a></li>
+                            <li><a href="allExerciseselectList.do?userId=${loggedInUser.getId() }">운동게시판</a></li>
+                            <li><a href=getAllParts.do?userId=${loggedInUser.getId()}>자료실</a></li>
+                            <li><a href=selectFeedbackList.do?userId=${loggedInUser.getId()}>피드백게시판</a></li>
+                        	
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href=""><%=userName%>님 마이페이지</a>
+                        <ul class="sh_nav_s">
+                            <li><a href="">운동루틴입력</a></li>
+                            <li><a href="Mypage.do?userId=${loggedInUser.getId()}">마이페이지</a></li>
+                            <li><a href="logout.do">로그아웃</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="menuLine"></div>
+            </div>
+		</div>
+    </div>
+
+
+    <div id="screen1">
+        <div id="sh_container_wrapper">
+        <div id="sh_main_banner">
+                <div class="swiper-container sh_main_swiper">
+                    <ul class="sh_main_img swiper-wrapper">
+                        <li class="box1 swiper-slide"></li>
+                        <li class="box2 swiper-slide"></li>
+                        <li class="box3 swiper-slide"></li>
+                    </ul>
+                </div>
+            <script>
+                $(document).ready(function(){
+                    $('.sh_txt_box .move_txt01').delay(200).animate({"margin-top":"0","opacity":"1"},600);
+                    $('.sh_txt_box .move_txt02').delay(600).animate({"opacity":"1"},600);
+                    $('.sh_txt_box .swiper-pager').delay(600).animate({"opacity":"1"},600);
+                    $('.sh_txt_box .scroll').delay(1000).animate({"opacity":"1"},600);
+                });
+                var swiper = new Swiper(".sh_main_swiper", {
+                    effect: "fade",
+                    loop: true,
+                    speed: 1000,
+                    autoplay: {
+                      delay: 3500,
+                      disableOnInteraction: false,
+                    },
+                    pagination: {
+                      el: ".swiper-pager",
+                      bulletActiveClass: 'on',
+                      clickable: true,
+                    },
+                });
+                </script>
+        </div>
+        </div>
+        </div>
+            <div id="sh_section">
+                <div id="atc01">
+                    <div id="left_image">
+                        <img src="KoreaMap_wifi.png" alt="Left Image" width="500" height="600">
+
+                    </div>
+                    <div class="='inner1"></div>
+                    <div class="inner2">
+                        <p class="tit">Public Wifi Usage<br><b>Analysis</b></p>
+                        <p class="txt">공공 와이파이 사용량 분석</p>
+                        <div class="more"><a href="">MORE VIEW</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div id="atc02">
+                    <ul>
+                        <li><a href="">
+                            <p class="img"></p>
+                            <p class="txt"><span>CREATIVE</span><br>그 이상의 가치</p>
+                        </a></li>
+                        <li><a href="">
+                            <p class="img"></p>
+                            <p class="txt"><span>INQUIRY</span><br>창의적인 아이디어 생성</p>
+                        </a></li>
+                        <li><a href="">
+                            <p class="img"></p>
+                            <p class="txt"><span>PARTNER</span><br>준비되어 있는 자세</p>
+                        </a></li>
+                        <li><a href="">
+                            <p class="img"></p>
+                            <p class="txt"><span>BUSINESS</span><br>디지털 분야 기업</p>
+                        </a></li>
+                    </ul>
+                        <br><br>
+                    </div>
+                </div>
+                </div>
+    <div style="border-top: 5px solid gray; width: 100%; margin-bottom: 20px; margin-top: 200px;"></div>
+
+        <div style="position: relative; text-align: center;">
+            <img src="gray2.jpg" alt="Image" width="3000" height="300">
+            <p class="image-caption" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;  font-weight: bold; font-size:24px;"><span style="font-size:40px">Analysis Graph</span><br><br> by Pycharm</p>
+        </div><br><br>
+<!--                    <div style="border-top: 5px solid black; width: 100%; margin-bottom: 20px;"></div>-->
+
+
+                <div style="border-top: 1px solid gray; width: 100%; margin-bottom: 20px;"></div>
+                <div style="display: flex; justify-content: center;">
+            <p class="txt" style="font-size: 20px; font-weight: bold;"><br>시도별 사용량 비율<br></p>
+            <img src="Korea_group.png" alt="Image 6" width="500" height="300" style="margin-right: 100px;">
+            <p class="txt" style="font-size: 20px; font-weight: bold;"><br>와이파이 사용량 top 10<br></p>
+            <img src="jeju_top10_usage (2).png" alt="Image 7" width="500" height="300" style="margin-right: 100px;">
+        </div><br><br>
+
+<div style="border-top: 1px solid gray; width: 100%; margin-bottom: 20px;"></div>
+<div class="slideshow-container">
+    <div class="age-slideshow">
+    <p class="txt" style="font-size: 20px; font-weight: bold;"><br>연령별 와이파이 사용량<br></p>
+
+        <img class="age-slide" src="age_2018.png" alt="Image 1" width="400" height="400">
+        <img class="age-slide" src="age_2019.png" alt="Image 2 " width="400" height="400" style="display: none;">
+        <img class="age-slide" src="age_2020.png" alt="Image 3" width="400" height="400" style="display: none;">
+        <img class="age-slide" src="age_2021.png" alt="Image 4" width="400" height="400" style="display: none;">
+        <img class="age-slide" src="age_2022.png" alt="Image 5" width="400" height="400" style="display: none;">
+</div>
+<div class="quarter-slideshow">
+        <p class="txt" style="font-size: 20px; font-weight: bold;"><br>분기별 와이파이 사용량<br></p>
+    <div class="quarter-slideshow">
+        <img class="quarter-slide" src="quarter_use_2018.png" alt="Image 8" width="500" height="400">
+        <img class="quarter-slide" src="quarter_use_2019.png" alt="Image 9" width="500" height="400" style="display: none;">
+        <img class="quarter-slide" src="quarter_use_2020.png" alt="Image 10" width="500" height="400" style="display: none;">
+        <img class="quarter-slide" src="quarter_use_2021.png" alt="Image 11" width="500" height="400" style="display: none;">
+        <img class="quarter-slide" src="quarter_use_2022.png" alt="Image 12" width="500" height="400" style="display: none;">
+    </div></div>
+
+    <div class="sex-slideshow">
+    <p class="txt" style="font-size: 20px; font-weight: bold;"><br>성별 와이파이 사용량<br></p>
+        <div class="gender-slides">
+        <img class="sex-slide" src="sex_2018.png" alt="Image 13" width="500" height="400">
+        <img class="sex-slide" src="sex_2019.png" alt="Image 14" width="500" height="400" style="display: none;">
+        <img class="sex-slide" src="sex_2020.png" alt="Image 15" width="500" height="400" style="display: none;">
+        <img class="sex-slide" src="sex_2021.png" alt="Image 15" width="500" height="400" style="display: none;">
+        <img class="sex-slide" src="sex_2022.png" alt="Image 17" width="500" height="400" style="display: none;">
+</div>
+    </div>
+</div>
+<script>
+
+    var ageSlides = document.querySelectorAll(".age-slide");
+    var quarterSlides = document.querySelectorAll(".quarter-slide");
+    var sexSlides = document.querySelectorAll(".sex-slide");
+
+    var currentAgeSlide = 0;
+    var currentQuarterSlide = 0;
+    var currentSexSlide = 0;
+
+
+    function showNextAgeSlide() {
+        ageSlides[currentAgeSlide].style.display = "none";
+        currentAgeSlide = (currentAgeSlide + 1) % ageSlides.length;
+        ageSlides[currentAgeSlide].style.display = "block";
+    }
+
+    function showNextQuarterSlide() {
+        quarterSlides[currentQuarterSlide].style.display = "none";
+        currentQuarterSlide = (currentQuarterSlide + 1) % quarterSlides.length;
+        quarterSlides[currentQuarterSlide].style.display = "block";
+    }
+
+    function showNextSexSlide() {
+        sexSlides[currentSexSlide].style.display = "none";
+        currentSexSlide = (currentSexSlide + 1) % sexSlides.length;
+        sexSlides[currentSexSlide].style.display = "block";
+    }
+
+    setInterval(showNextAgeSlide, 2000);
+    setInterval(showNextQuarterSlide, 2000);
+    setInterval(showNextSexSlide, 2000);
+
+</script>
+
+<style>
+    .slideshow-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .age-slides,
+    .quarter-slides,
+    .gender-slides {
+        display: flex;
+    }
+
+    .age-slides img,
+    .quarter-slides img,
+    .gender-slides img {
+        flex: 0 0 auto;
+        margin-right: 10px;
+    }
+</style>
+<br><br>
+    <div id="sh_ft">
+        <div class="info">
+            <span style="font-size:20px;">SW 핵심인재 양성과정</span>
+            고객센터:1234-5678 <br> 이메일:1111@naver.com
+        </div>
+        <div class="copy">
+            <div class="copy_wrap">
+                <span>ⓒ <b>Sample</b>  All rights reserved.</span>
+            </div>
+        </div>
+    </div></div>
+
+
+</body>
+</html>
+
